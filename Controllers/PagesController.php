@@ -1,5 +1,9 @@
 <?php
-class PagesController{
+declare(strict_types=1);
+
+namespace Legacy\Controllers;
+
+class PagesController {
 	
 	public function defaultAction(){
 

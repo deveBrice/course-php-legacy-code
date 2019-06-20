@@ -1,5 +1,10 @@
 <?php
 
+namespace Legacy;
+
+use Legacy\Core\Routing;
+
+//require __DIR__.'../vendor/autoload.php';
 require "conf.inc.php";
 
 function myAutoloader($class){
@@ -13,7 +18,7 @@ function myAutoloader($class){
 }
 
 // La fonction myAutoloader est lancé sur la classe appelée n'est pas trouvée
-spl_autoload_register("myAutoloader");
+spl_autoload_register("Legacy\myAutoloader");
 
 // Récupération des paramètres dans l'url - Routing
 $slug = explode("?", $_SERVER["REQUEST_URI"])[0];

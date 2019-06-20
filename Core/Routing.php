@@ -1,4 +1,9 @@
 <?php
+
+declare(strict_types=1);
+
+namespace Legacy\Core;
+
 class Routing{
 
 	public static $routeFile = "routes.yml";

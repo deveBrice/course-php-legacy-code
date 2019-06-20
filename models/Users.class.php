@@ -1,4 +1,7 @@
 <?php
+declare(strict_types=1);
+
+namespace Legacy\models;
 class Users extends BaseSQL{
 
 	public $id = null;
